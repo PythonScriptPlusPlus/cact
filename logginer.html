@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<meta charset='utf-8'>
+</head>
+<body style='margin: 0;'>
+	<h1 style='margin: 0; background-color: #03a903; color: #e8c795; font-size: 3em;'>Cactus news</h1>
+	<div style='text-align: center; margin-top: 25px'>
+		<input type='' name='' placeholder='Cactus ID' id='Cactus_ID'>
+		<br>
+		<input style='margin-top: 10px;' type='' name='' placeholder='Cactus Password' id='Cactus_Password'>
+	</div>
+	<button style='margin-left: 45%; width: 10%; margin-top: 25px;' id='Sign_Iner'>Log In</button>
+	<hr>
+	<div id='result'></div>
+
+	<script type="text/javascript">
+        function fortnite() {
+            var login = document.getElementById('Cactus_ID').value;
+            var password = document.getElementById('Cactus_Password').value;
+
+            var html = 'Ваш логин: ' + login + ' Ваш пароль: ' + password;
+
+            document.getElementById('result').innerHTML = html;
+
+        }
+
+        document.getElementById('Sign_Iner').addEventListener('click', fortnite);
+
+    </script>
+</body>
+</html>
